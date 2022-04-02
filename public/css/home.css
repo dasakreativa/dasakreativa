@@ -1,0 +1,111 @@
+/*!
+ * Main CSS for landing page
+ * File CSS yang berisikan semua penggaya untuk halaman depan
+ * Copyright (c) 2021 Dasa Kreativa Studio
+ * Copyright (c) 2021 Programmer Ndeso
+ */
+
+#header-container .row {
+    min-height: 100vh;
+}
+#header-container .title {
+    margin-bottom: 1.25rem;
+    font-size: 2.5em;
+}
+#header-container .title u {
+    text-decoration: none;
+    border-bottom: 5px solid var(--orange);
+}
+#header-container .subtitle {
+    margin-bottom: 1.5rem;
+    color: var(--gray);
+    font-size: 1.25em;
+    line-height: 1.5
+}
+@media screen and (max-width:768px) {
+    #header-container {
+        padding-top: 7.5rem;
+        padding-bottom: 3rem;
+    }
+    #header-container .title {
+        font-size: 2rem;
+    }
+    #header-container .subtitle {
+        font-size: 1.05em;
+    }
+}
+
+/** About **/
+section#about {
+    background: #eee;
+}
+section#about .sub-lead {
+    font-size: 1em;
+    color: var(--orange);
+    margin: 0;
+}
+section#about .lead {
+    font-size: 3em;
+    font-weight: bold;
+}
+section#about .desc {
+    font-size: 1em;
+    color: var(--gray);
+    line-height: 1.75;
+}
+@media screen and (max-width:768px) {
+    section#about .lead {
+        font-size: 2rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
+/** Services */
+section#services .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+section#services .sub-lead {
+    margin: 0;
+    color: var(--gray);
+}
+section#services .lead {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+section#services .nav-link {
+    color: var(--orange);
+}
+section#services .nav-link.active {
+    background: var(--orange);
+    color: var(--white);
+}
+
+section#services .service-item {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+section#services .service-item:hover {
+    border-color: var(--orange);
+    background: rgba(253, 125, 20, 0.05);
+    color: var(--orange);
+}
+section#services .service-item img {
+    height: 75px;
+}
+section#services .service-item .service-details {
+    margin-left: 1rem;
+}
+section#services .service-item .service-details .service-title {
+    font-size: 1.25rem;
+}
+section#services .service-item .service-details .service-sub {
+    margin: 0;
+}

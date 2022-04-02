@@ -1,0 +1,6 @@
+/*!
+ * Main CSS for landing page
+ * File CSS yang berisikan semua penggaya untuk halaman depan
+ * Copyright (c) 2021 Dasa Kreativa Studio
+ * Copyright (c) 2021 Programmer Ndeso
+ */.service{display:flex}.service .service-left{background:url(/images/mandala.svg) no-repeat -3rem -3rem,linear-gradient(45deg,var(--danger),var(--warning));color:#fff;width:30%;padding:2rem;flex-basis:30%}.service .service-right{width:100%;padding:2rem;flex-basis:100%}@media screen and (max-width:768px){.service{flex-direction:column}.service .service-left,.service .service-right{width:100%;flex-basis:100%}}.service-widget .service-list{list-style:none;padding:0}.service-widget .service-list a{color:var(--gray);padding:.2rem 0;display:flex;font-size:.9em;text-decoration:none;transition:all .2s}.service-widget .service-list a:hover{color:var(--orange)}.service-widget{margin-bottom:1rem}.service-widget .title{font-size:1rem}#header-container{margin-top:5rem}#header-container .title{margin-bottom:1.25rem;font-size:2.5em}#header-container .title u{text-decoration:none;border-bottom:5px solid var(--orange)}#header-container .subtitle{margin-bottom:1.5rem;color:var(--gray);font-size:1.1em;line-height:1.5}

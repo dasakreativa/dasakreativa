@@ -1,0 +1,190 @@
+/*!
+ * Global CSS for landing page
+ * File CSS yang berisikan semua penggaya untuk primary component
+ * Copyright (c) 2021 Dasa Kreativa Studio
+ * Copyright (c) 2021 Programmer Ndeso
+ */
+body {
+    font-family: Overpass, sans-serif
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Outfit, sans-serif;
+    font-weight: 700
+}
+
+.navbar-collapse {
+    max-height: calc(100vh - 3.5rem);
+    overflow: auto;
+}
+
+li.nav-item.dropdown.megamenu {
+    position: static
+}
+
+li.nav-item.dropdown.megamenu .dropdown-menu {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    box-shadow: 0 2px 8px rgba(20, 4, 4, .25)
+}
+
+li.nav-item.dropdown.megamenu .dropdown-menu .dropdown-inner {
+    overflow-y: auto;
+    max-height: 500px
+}
+
+@media screen and (max-width:768px) {
+    li.nav-item.dropdown.megamenu .dropdown-menu .dropdown-inner {
+        overflow-y: unset;
+        max-height: unset
+    }
+}
+
+.service {
+    display: flex
+}
+
+.service .service-left {
+    background: url(/images/mandala.svg) no-repeat -3rem -3rem, linear-gradient(45deg, var(--danger), var(--warning));
+    color: #fff;
+    width: 30%;
+    padding: 2rem;
+    flex-basis: 30%
+}
+
+@media screen and (max-width: 768px) {
+    .service .service-left {
+        background: -2rem no-repeat url(/images/mandala.svg), linear-gradient(45deg, var(--danger), var(--warning));
+    }
+}
+
+.service .service-right {
+    width: 100%;
+    padding: 2rem;
+    flex-basis: 100%
+}
+
+@media screen and (max-width:768px) {
+    .service {
+        flex-direction: column
+    }
+
+    .service .service-left,
+    .service .service-right {
+        width: 100%;
+        padding-bottom: 0.5rem;
+        flex-basis: 100%;
+    }
+}
+
+.service-widget .service-list {
+    list-style: none;
+    padding: 0
+}
+
+.service-widget .service-list a {
+    color: var(--gray);
+    padding: .2rem 0;
+    display: flex;
+    font-size: .9em;
+    text-decoration: none;
+    transition: all .2s
+}
+
+.service-widget .service-list a:hover {
+    color: var(--orange)
+}
+
+.service-widget {
+    margin-bottom: 1rem
+}
+
+.service-widget .title {
+    font-size: 1rem
+}
+
+section {
+    padding: 5rem 0
+}
+
+/** Footer */
+.footer {
+    background: #0a0422;
+    color: white;
+}
+
+.footer a {
+    color: rgb(216, 216, 216);
+}
+.footer .footer-inner {
+    padding: 1rem 0;
+}
+
+.footer #footer-top {
+    padding-top: 4rem;
+}
+
+.footer .alamat-dan-kontak {
+    list-style: none;
+    padding: 0;
+}
+.footer .alamat-dan-kontak li {
+    display: flex;
+    line-height: 1.5;
+    margin-bottom: .5rem;
+}
+.footer .alamat-dan-kontak li::before {
+    font-family: 'Font Awesome 6 Free', 'Font Awesome 6 Brands';
+    font-weight: 900;
+    margin-right: 1rem;
+    font-size: 1.25em;
+}
+.footer .alamat-dan-kontak li:nth-child(1)::before {
+    content: '\f1ad';
+}
+.footer .alamat-dan-kontak li:nth-child(2)::before {
+    content: '\f232';
+}
+.footer .alamat-dan-kontak li:nth-child(3)::before,
+.footer .alamat-dan-kontak li:nth-child(4)::before {
+    content: '\f0e0';
+}
+
+.footer .footer-widget {
+    margin-bottom: 1rem;
+}
+.footer .footer-widget .title {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.footer .footer-list {
+    list-style: none;
+    padding: 0;
+}
+.footer .footer-list li {
+    display: flex;
+    line-height: 1.5;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+.footer .footer-list li::before {
+    content: '\f138';
+    font-family: 'Font Awesome 6 Free', 'Font Awesome 6 Brands';
+    font-weight: 900;
+    margin-right: .75rem;
+    font-size: 1em;
+}
